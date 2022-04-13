@@ -102,6 +102,7 @@ function anagramm(strings) {
 	buffer.forEach(string => {
 		mass_simbols.push(new Map());
 		counter++;
+		string = string.toLowerCase();
 
 		for (var i = 0; i < string.length; i++) {
 			current_simbol = string[i];
