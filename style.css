@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+p, h1, h2 {
+	text-align: center;
+}
+
+p, li {
+	font-size: 20px;
+	margin: 5px 0;
+}
+
+ol {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+
+button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-width: 100px;
+	height: 40px;
+}
+
+input {
+	font-size: 20px;
+	height: 40px;
+}
+
+.Content {
+	width: 250px;
+	margin: 70px auto 70px auto;
+}
+
+.Content > div > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.Taker > div > div, .Edit_simbol > div > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#main_input {
+	background-color: #a4f59d;
+}
+
+#delete_input, #edit_input {
+	width: 50px;
+	text-align: center;
+}
+
+#delete_input {
+	background-color: #ff9c9c;
+}
+
+#edit_input {
+	background-color: #c5cbff;
+}
+
+.Edit_simbol > div > div > button {
+	width: 150px;
+}

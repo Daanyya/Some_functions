@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Test JS function</title>
+</head>
+	<body>
+		<h1>I'm tester</h1>
+		<div class="Content">
+			<div class="Taker">
+				<h2>Приниматор строк</h2>
+				<div>
+					<input id="main_input" type="text">
+					<button onclick="add()">Добавить</button>
+					<div>
+						<button onclick="remove_string()">Удалить</button>
+						<input id="delete_input" type="number" min="1" value="1">
+					</div>
+					<button onclick="remove_all()">Очистить всё</button>
+				</div>
+				
+			</div>
+			<div class="Strings">
+				<h2>Принятые строки</h2>
+				<div class="Items">
+					<ol id="container">
+						<li id="string_item">Default</li>
+					</ol>
+				</div>
+			</div>
+			<div class="Max_length_string">
+				<h2>Самая длинная строка</h2>
+				<div id="output_string_field">
+					<button onclick="get_max_length_string()">Получить</button>
+					<p id="output_string"></p>
+				</div>
+			</div>
+			<div class="Popular_simbol">
+				<h2>Популярные символы</h2>
+				<div>
+					<button onclick="get_frequently_used_symbol()">Получить</button>
+					<ol id="popular_simbol_container"></ol>
+				</div>
+			</div>
+			<div class="Edit_simbol">
+				<h2>Замени популярные символы</h2>
+				<div>
+					<div>
+						<button onclick="do_replace_simbol()">Заменить в строке</button>
+						<input id="edit_input" type="number" min="1" value="1">
+					</div>
+				</div>
+			</div>
+			<div class="Anagramms">
+				<h2>Проверь строки на анаграммы</h2>
+				<div>
+					<button onclick="check_anagramm()">Проверить</button>
+					<p id="output_anagramm_checker"></p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="script.js"></script>
